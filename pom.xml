@@ -8,7 +8,7 @@
 	</parent>
 
 	<name>CodeMirror</name>
-	<artifactId>fujion-codemirror</artifactId>
+	<artifactId>webjar-codemirror</artifactId>
 	<version>5.39.2-SNAPSHOT</version>
 	<description>CodeMirror code editor.</description>
 	
