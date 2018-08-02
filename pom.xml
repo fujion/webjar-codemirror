@@ -9,7 +9,7 @@
 
 	<name>CodeMirror</name>
 	<artifactId>webjar-codemirror</artifactId>
-	<version>5.39.2-SNAPSHOT</version>
+	<version>5.39.2</version>
 	<description>CodeMirror code editor.</description>
 	
 	<properties>
@@ -39,7 +39,7 @@
 						<id>precompile</id>
 						<configuration>
 							<target>
-								<get src="${src.url}" dest="${src.zipdir}/src.zip"/>
+								<get src="${src.url}" dest="${src.zipdir}/src.zip" />
 								<unzip src="${src.zipdir}/src.zip" dest="${src.tmpdir}" />
 							</target>
 						</configuration>
@@ -49,7 +49,7 @@
 						<configuration>
 							<target>
 								<move todir="${webjar.target}">
-									<fileset dir="${src.rootdir}" includes="lib/**,addon/**,keymap/**,mode/**,theme/**,LICENSE,README.md"/>
+									<fileset dir="${src.rootdir}" includes="lib/**,addon/**,keymap/**,mode/**,theme/**,LICENSE,README.md" />
 								</move>
 							</target>
 						</configuration>
@@ -62,4 +62,8 @@
 			</plugin>
 		</plugins>
 	</build>
+
+  <scm>
+    <tag>5.39.2</tag>
+  </scm>
 </project>
