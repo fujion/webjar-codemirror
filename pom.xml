@@ -21,7 +21,7 @@
 				'codemirror-css': 'lib/codemirror.css'
 			},
 			'map': {
-				'codemirror': 'webjars/codemirror'
+				'codemirror': 'webjars/webjar-codemirror'
 			}
 		</systemjs>
 	</properties>
