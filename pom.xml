@@ -13,6 +13,7 @@
 	<description>CodeMirror code editor.</description>
 	
 	<properties>
+		<skip.minification>false</skip.minification>
 		<src.url>https://github.com/codemirror/CodeMirror/archive/${src.version}.zip</src.url>
 		<src.top>CodeMirror-${src.version}</src.top>
 		<systemjs>
@@ -55,10 +56,6 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>com.samaxes.maven</groupId>
-				<artifactId>minify-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
