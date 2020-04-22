@@ -9,13 +9,11 @@
 
 	<name>CodeMirror</name>
 	<artifactId>webjar-codemirror</artifactId>
-	<version>5.48.0-SNAPSHOT</version>
+	<version>5.53.2-SNAPSHOT</version>
 	<description>CodeMirror code editor.</description>
 	
 	<properties>
 		<skip.minification>false</skip.minification>
-		<src.url>https://github.com/codemirror/CodeMirror/archive/${src.version}.zip</src.url>
-		<src.top>CodeMirror-${src.version}</src.top>
 		<systemjs>
 			'paths': {
 				'codemirror': 'lib/codemirror.js',
@@ -48,8 +46,11 @@
 						<id>precompile</id>
 						<configuration>
 							<target>
-								<get src="${src.url}" dest="${src.zipdir}/src.zip" />
-								<unzip src="${src.zipdir}/src.zip" dest="${src.tmpdir}" />
+								<copy tofile="${src.rootdir}/package.json" file="${basedir}/package-template.json">
+									<filterchain>
+										<expandproperties />
+									</filterchain>
+								</copy>
 							</target>
 						</configuration>
 					</execution>
@@ -58,7 +59,7 @@
 						<configuration>
 							<target>
 								<move todir="${webjar.target}">
-									<fileset dir="${src.rootdir}" includes="lib/**,addon/**,keymap/**,mode/**,theme/**,LICENSE,README.md" />
+									<fileset dir="${src.rootdir}/node_modules/codemirror" includes="lib/**,addon/**,keymap/**,mode/**,theme/**,LICENSE,README.md" />
 								</move>
 							</target>
 						</configuration>
