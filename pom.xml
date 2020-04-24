@@ -14,15 +14,6 @@
 	
 	<properties>
 		<skip.minification>false</skip.minification>
-		<systemjs>
-			'paths': {
-				'codemirror': 'lib/codemirror.js',
-				'codemirror-css': 'lib/codemirror.css'
-			},
-			'map': {
-				'codemirror': 'webjars/webjar-codemirror'
-			}
-		</systemjs>
 	</properties>
 	
 	<build>
@@ -33,9 +24,6 @@
 				<executions>
 					<execution>
 						<id>npm-install</id>
-						<configuration>
-							<skip>false</skip>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>

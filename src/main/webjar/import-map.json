@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "codemirror": "lib/codemirror.js",
+    "codemirror-css": "lib/codemirror.css",
+    "codemirror/": "./"
+  }
+}
