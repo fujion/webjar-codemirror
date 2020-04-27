@@ -1,7 +1,9 @@
 {
-  "imports": {
-    "codemirror": "lib/codemirror.js",
-    "codemirror-css": "lib/codemirror.css",
-    "codemirror/": "./"
+  "paths": {
+    "codemirror": "dist/lib/codemirror.js",
+    "codemirror-css": "dist/lib/codemirror.css"
+  },
+  "map": {
+    "codemirror": "webjars/webjar-codemirror/dist"
   }
 }
