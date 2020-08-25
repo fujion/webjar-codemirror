@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>org.fujion.webjars</groupId>
 		<artifactId>fujion-webjars</artifactId>
-		<version>3.0.0-SNAPSHOT</version>
+		<version>3.0.0</version>
 	</parent>
 
 	<name>CodeMirror</name>
 	<artifactId>webjar-codemirror</artifactId>
-	<version>5.56.0-SNAPSHOT</version>
+	<version>5.56.0</version>
 	<description>CodeMirror code editor.</description>
 	
 	<properties>
