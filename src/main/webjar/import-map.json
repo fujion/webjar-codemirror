@@ -1,7 +1,5 @@
 {
   "imports": {
-    "codemirror": "dist/lib/codemirror.js",
-    "codemirror-css": "dist/lib/codemirror.css",
     "codemirror/":  "dist/"
   }
 }
