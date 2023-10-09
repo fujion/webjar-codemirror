@@ -49,8 +49,11 @@
 						<id>postcompile</id>
 						<configuration>
 							<target>
+								<copy todir="${webjar.target}">
+									<fileset dir="${src.rootdir}/node_modules/codemirror" includes="LICENSE,README.md" />
+								</copy>
 								<copy todir="${webjar.target}/dist">
-									<fileset dir="${src.rootdir}/node_modules/codemirror" includes="lib/,addon/,keymap/,mode/,theme/,LICENSE,README.md" />
+									<fileset dir="${src.rootdir}/node_modules/codemirror" includes="lib/,addon/,keymap/,mode/,theme/" />
 								</copy>
 							</target>
 						</configuration>
