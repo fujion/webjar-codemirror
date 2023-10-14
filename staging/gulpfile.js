@@ -3,7 +3,7 @@ const minifyJS = require('gulp-minify');
 const minifyCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
 
-const srcDir = '${src.rootdir}/node_modules/codemirror/';
+const srcDir = '${webjar.staging}/node_modules/codemirror/';
 const destDir = '${webjar.target}/';
 
 function task1() {
