@@ -13,7 +13,6 @@
 	<description>CodeMirror code editor.</description>
 	
 	<properties>
-		<skip.minification>false</skip.minification>
 		<npm-install.skip>false</npm-install.skip>
 	</properties>
 	
@@ -47,23 +46,11 @@
 						<id>precompile</id>
 						<configuration>
 							<target>
-								<copy tofile="${src.rootdir}/package.json" file="${basedir}/package-template.json">
+								<copy todir="${src.rootdir}">
+									<fileset dir="${basedir}/staging" />
 									<filterchain>
 										<expandproperties />
 									</filterchain>
-								</copy>
-							</target>
-						</configuration>
-					</execution>
-					<execution>
-						<id>postcompile</id>
-						<configuration>
-							<target>
-								<copy todir="${webjar.target}">
-									<fileset dir="${src.rootdir}/node_modules/codemirror" includes="LICENSE,README.md" />
-								</copy>
-								<copy todir="${webjar.target}/dist">
-									<fileset dir="${src.rootdir}/node_modules/codemirror" includes="lib/,addon/,keymap/,mode/,theme/" />
 								</copy>
 							</target>
 						</configuration>
