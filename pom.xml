@@ -9,7 +9,7 @@
 
 	<name>CodeMirror</name>
 	<artifactId>webjar-codemirror</artifactId>
-	<version>5.65.15-SNAPSHOT</version>
+	<version>5.65.16-SNAPSHOT</version>
 	<description>CodeMirror code editor.</description>
 	
 	<build>
